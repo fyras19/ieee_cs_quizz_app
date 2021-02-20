@@ -49,7 +49,7 @@ class WelcomePage extends StatelessWidget {
                   child: Ink(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                        colors: [Color.fromRGBO(77, 57, 0, 1), Color.fromRGBO(204, 153, 0, 1)],
+                        colors: [Color.fromRGBO(255, 51, 204, 1), Color.fromRGBO(255, 153, 230, 1)],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                       ),
