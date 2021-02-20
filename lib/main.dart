@@ -3,23 +3,19 @@ import './screens/Welcome_Page.dart';
 import 'package:ieee_cs_quizz/screens/screen_1.dart';
 import 'package:flutter/material.dart';
 
-main()=>runApp(MyApp());
+main() => runApp(MyApp());
 
-
-
+//Firas Branche
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState()=>_MyAppState();
+  _MyAppState createState() => _MyAppState();
 }
 
-Color w=Colors.white;
-Color b =Colors.black;
-
+Color w = Colors.white;
+Color b = Colors.black;
 
 class _MyAppState extends State<MyApp> {
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,35 +28,23 @@ class _MyAppState extends State<MyApp> {
       ),
       //home: MyHomePage(),
       routes: {
-        '/':(context)=>WelcomePage(),
-        FirstScreen.routeName:(context)=>FirstScreen(),
+        '/': (context) => WelcomePage(),
+        FirstScreen.routeName: (context) => FirstScreen(),
       },
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-
       body: null,
-
     );
-
-
-
-
   }
 }
-
