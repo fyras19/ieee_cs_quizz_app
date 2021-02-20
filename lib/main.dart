@@ -27,8 +27,8 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        accentColor: Colors.pink,
+        canvasColor: Colors.amber,
       ),
       //home: MyHomePage(),
       routes: {

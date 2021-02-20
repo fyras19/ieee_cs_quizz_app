@@ -91,6 +91,7 @@ class _FirstScreenState extends State<FirstScreen> {
       appBar: AppBar(
         //backgroundColor: Colors.white,
         title: Text("Quiz App",style:TextStyle(color: w),),
+        centerTitle: true,
         actions: <Widget>[
           Switch(
             value: isSwitched,

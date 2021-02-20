@@ -8,18 +8,38 @@ class Ansewer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
+    return Column(
+      children:<Widget>[
+        Container(
 
-      child: RaisedButton(
-         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(80.0),
-    ),
-        color: Colors.blue,
-        textColor: Colors.white,
-        child: Text(ansewerText,style: TextStyle(fontSize: 25),),
-        onPressed: x,
-      ),
+        width: 250,
+
+        child: RaisedButton(
+
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(80.0),
+
+          ),
+          color: Colors.blue,
+          textColor: Colors.white,
+          child: Row(
+
+            children: [
+              Padding(padding:EdgeInsets.only(right: 20)),
+              Icon(Icons.check_outlined),
+              Padding(padding:EdgeInsets.only(right: 40)),
+              Center(child: Text(ansewerText,style: TextStyle(fontSize: 25),)),
+            ],
+          ),
+          onPressed: x,
+        ),
+        ),
+
+
+      ],
+
+
+
     );
   }
 }
