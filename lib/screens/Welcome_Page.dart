@@ -15,7 +15,7 @@ class WelcomePage extends StatelessWidget {
       Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/background.jpg'),
+              image: AssetImage('assets/3d.jpg'),
               fit: BoxFit.cover,
             )
         ),
@@ -28,7 +28,7 @@ class WelcomePage extends StatelessWidget {
               Padding(
                 padding:  EdgeInsets.only(top: 50),
                 child: Image.asset(
-                  "assets/logo1.png", cacheWidth: 350,
+                  "assets/ww.png", cacheWidth: 350,
                 ),
               ),
               Container(
@@ -36,17 +36,25 @@ class WelcomePage extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: RaisedButton(
                   onPressed:()=>selectPage(context),
+                  color: Colors.pinkAccent,
 
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(80.0),
+
+
 
                   ),
 
                   padding: EdgeInsets.all(0.0),
                   child: Ink(
                     decoration: BoxDecoration(
-
-                        borderRadius: BorderRadius.circular(30.0)),
+                      gradient: LinearGradient(
+                        colors: [Color.fromRGBO(77, 57, 0, 1), Color.fromRGBO(204, 153, 0, 1)],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomLeft,
+                      ),
+                        borderRadius: BorderRadius.circular(30.0),
+                    ),
                     child: Container(
                       constraints:
                       BoxConstraints(maxWidth: 250.0, minHeight: 50.0),
@@ -70,7 +78,7 @@ class WelcomePage extends StatelessWidget {
                         children: <Widget>[
                           Text("IEEE CS Chapter    ",
                             style: TextStyle(fontSize: 16,
-                              color: Color.fromRGBO(51, 38, 0, 1),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,),),
                           //RaisedButton(onPressed: NavigateToData_Base)
                           SizedBox(
@@ -79,13 +87,13 @@ class WelcomePage extends StatelessWidget {
                           ),
                           Text(" SUP'COM Student Branch    ",
                             style: TextStyle(fontSize: 16,
-                              color: Color.fromRGBO(51, 37, 0, 1),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,),),
                         ]
                     ),
                     ClipOval(
                       child: Image.asset(
-                        'assets/logo.png',
+                        "assets/logo.png",
                         width: 100,
                         fit: BoxFit.cover,
                       ),

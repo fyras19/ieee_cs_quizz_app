@@ -10,7 +10,11 @@ class Ansewer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+
       child: RaisedButton(
+         shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(80.0),
+    ),
         color: Colors.blue,
         textColor: Colors.white,
         child: Text(ansewerText,style: TextStyle(fontSize: 25),),

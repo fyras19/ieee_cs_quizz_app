@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../widgets/Quiz.dart';
 import '../widgets/result.dart';
-
 import '../main.dart';
 
 
@@ -90,6 +89,7 @@ class _FirstScreenState extends State<FirstScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        //backgroundColor: Colors.white,
         title: Text("Quiz App",style:TextStyle(color: w),),
         actions: <Widget>[
           Switch(
