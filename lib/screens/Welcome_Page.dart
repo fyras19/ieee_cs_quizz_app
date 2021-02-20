@@ -45,11 +45,7 @@ class WelcomePage extends StatelessWidget {
                   padding: EdgeInsets.all(0.0),
                   child: Ink(
                     decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Color.fromRGBO(77, 57, 0, 1), Color.fromRGBO(204, 153, 0, 1)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomLeft,
-                        ),
+
                         borderRadius: BorderRadius.circular(30.0)),
                     child: Container(
                       constraints:
